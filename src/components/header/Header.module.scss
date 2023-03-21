@@ -1,0 +1,28 @@
+.header {
+  background-image: url(../../assets/images/desktop/image-header.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  
+
+  h2 {
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
+    span {
+      font-size: 4rem;
+      transform: scaleY(2.4);
+      display: inline-block;
+      position: absolute;
+      top: 280%;
+    }
+  }
+}

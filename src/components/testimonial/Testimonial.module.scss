@@ -1,0 +1,50 @@
+@use '../../mixin.scss' as mixin;
+
+.testimonial {
+  flex-basis: 33.33%;
+  padding: 1rem 2.7rem;
+  max-width: 25rem;
+
+  @include mixin.respond(nine) {
+    padding: 1rem 2rem;
+  }
+  @include mixin.respond(eight) {
+    padding: 1rem 1.6rem;
+  }
+  @include mixin.respond(sixPointFive) {
+    margin: 0 auto 2.5rem auto;
+  }
+
+  .img {
+    width: 20%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .description {
+    padding: 1.75rem 0;
+    font-family: 'Barlow', sans-serif;
+    color: #5d6065;
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+
+  .info {
+
+    h4 {
+      font-size: 1.1rem;
+      padding-bottom: 0.1rem;
+    }
+
+    p {
+      color: rgba(93, 96, 101, 0.7);
+      font-size: 0.76rem;
+      letter-spacing: 1px;
+      font-family: 'Barlow', sans-serif;
+    }
+  }
+}

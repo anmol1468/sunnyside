@@ -1,0 +1,76 @@
+@use '../../mixin.scss' as mixin;
+
+.service {
+  display: flex;
+
+  @include mixin.respond(seven) {
+    flex-direction: column-reverse !important;
+  }
+
+  &__info {
+    // padding: 3rem 4rem;
+    // text-align: left;
+    flex-basis: 50%;
+    
+
+    @include mixin.respond(seven) {
+        min-height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+    div {
+      padding: 3em 4rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+      box-sizing: border-box;
+      height: 100%;
+      
+      @include mixin.respond(seven) {
+        text-align: center; 
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+      }
+    }
+
+    h3 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      font-family: 'Barlow', sans-serif;
+      color: #807E89;
+      letter-spacing: 1px;
+      font-weight: 400;
+      padding: 2rem 0;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      border-bottom: 9px solid rgba(255, 255, 0, 0.55);
+      line-height: 0.3;
+      font-weight: 800;
+    }
+  }
+
+  &__illustration {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
